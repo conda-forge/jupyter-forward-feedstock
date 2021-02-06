@@ -26,6 +26,7 @@ requirements:
     - python >=3.7
     - typer >=0.3
     - fabric >=2.5
+    - rich >= 9.10
 
 test:
   imports:
@@ -56,3 +57,4 @@ about:
 extra:
   recipe-maintainers:
     - andersy005
+    - mnlevy1981
