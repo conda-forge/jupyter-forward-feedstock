@@ -32,7 +32,7 @@ test:
   imports:
     - jupyter_forward
   commands:
-    - pip check
+    # - pip check
     - jupyter-forward --help
     - jlab-forward --help
   requires:
