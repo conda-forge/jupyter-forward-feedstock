@@ -10,7 +10,7 @@ source:
   sha256: b052950dfdc49398e2c4799986b63084dda8390751f66f84664182086efcc5a1
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - jupyter-forward=jupyter_forward.cli:main
     - jlab-forward=jupyter_forward.cli:main
