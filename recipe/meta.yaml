@@ -1,5 +1,5 @@
 {% set name = "jupyter-forward" %}
-{% set version = "2021.5.11" %}
+{% set version = "2021.8.17" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4aecb3b8e1de10091a2717fbcb90fa63db7e8437e782329415c4ca460d6f068
+  sha256: 17664c0d37a2788d11add8630152ae4e7e029d9e300660cdb4102fe7357133b4
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -58,3 +58,4 @@ extra:
   recipe-maintainers:
     - andersy005
     - mnlevy1981
+    - mgrover1
