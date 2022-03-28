@@ -1,5 +1,5 @@
 {% set name = "jupyter-forward" %}
-{% set version = "2022.2.25" %}
+{% set version = "2022.3.28" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 05399c2ec5a90d30ddcaf6c7da7d3cd54d2e7e41d870d8789faa6169dfa8084b
+  sha256: 8413ea8a22799be458ae8c29733eb044a81c462a3247be989a431ab872f6d22e
 
 build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
